@@ -1,0 +1,40 @@
+    <header class="container-fluid bg-primary">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <a href="#" class="navbar-brand text-uppercase">sistema web</a>
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Cadastrar</a>
+                <a href="search" class="nav-item nav-link">Consultar</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <p class="fw-bold fs-5">Cadastrar - Agendamento de Potenciais Clientes</p>
+        <p>Sistema utilizado para agendamento de serviços</p>
+        <form action="/cadastrar" method="post">
+            <div class="form-group mb-3">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="form-group mb-3">
+                <label for="tel">Telefone:</label>
+                <input type="tel" placeholder="(xx)xxxxx-xxxx" class="form-control" name="tel" id="tel">
+            </div>
+            <div class="form-group mb-3">
+                <label for="origin">Origem:</label>
+                <select class="form-control" name="origin" id="origin">
+      consulta              <option value="celular">Celular</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="residencial">Residencial</option>
+                </select>
+            </div>
+            <div class="form-group mb-3">
+                <label for="date">Data do contato:</label>
+                <input class="form-control" type="date" name="date" id="date">
+            </div>
+            <div class="form-group mb-3">
+                <label for="obs">Observação:</label>
+                <textarea class="form-control" name="obs" id="obs"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </main>
